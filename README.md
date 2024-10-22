@@ -21,13 +21,16 @@ chmod +x ngrok
 ```
 Bước 4: Chạy Ngrok để mở cổng 5000
 ```
-./ngrok http 5000 (đi tới đường dẫn để đăng ký tài khoản và lấy token)
+./ngrok http 5000
+#(đi tới đường dẫn để đăng ký tài khoản và lấy token)
 ```
 Bước 5: Cấu hình Authtoken cho Ngrok
 ```
 ./ngrok config add-authtoken <your-authtoken>
-Sau đó, chạy lại lệnh:
-./ngrok http 5000
-Để dừng chương trình, nhấn tổ hợp phím Ctrl + C
 ```
+Sau đó, chạy lại lệnh:
+```
+./ngrok http 5000
+```
+Để dừng chương trình, nhấn tổ hợp phím Ctrl + C
 Lưu ý: khi chạy file vừa chạy "python app.py" và "./ngrok http 5000"
