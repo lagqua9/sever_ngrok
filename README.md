@@ -20,3 +20,5 @@ Bước 5: Cấu hình Authtoken cho Ngrok
 Sau đó, chạy lại lệnh:
 ./ngrok http 5000
 Để dừng chương trình, nhấn tổ hợp phím Ctrl + C
+```
+Lưu ý: khi chạy file vừa chạy "python app.py" và "./ngrok http 5000"
