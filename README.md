@@ -1,9 +1,9 @@
 # run-ngrok
 '''cách chạy ngrok
 cài thư viện:
-+pip install Flask
++"pip install Flask"
 b1 tải về:
-+ wget https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-arm.zip
++ "wget https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-arm.zip"
 b2 giải nén file zip vừa tải:
 + unzip ngrok-v3-stable-linux-arm.zip
 b3 cấp quyền:
