@@ -4,7 +4,7 @@
 ## Cài đặt thư viện
 
 Trước tiên, bạn cần cài đặt Flask bằng lệnh sau:
-pip install Flask
+"pip install Flask'
 ```bash
 
 //Bước 1: Tải về Ngrok
