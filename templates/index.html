@@ -1,19 +1,48 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Dự báo thời tiết cho Nông nghiệp</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="/app_web/static/css/style.css">
 </head>
+
 <body>
-    <div class="container">
-        <h1>Dự báo thời tiết cho Nông nghiệp</h1>
-        <div id="weather-data">
-            <p>Đang tải dữ liệu...</p>
+    <div id="title_id">
+        <h2>Biểu đồ thời tiết cho nông nghiệp</h2>
+    </div>
+
+    <div id="weather-data">
+        <!-- Biểu đồ nhiệt độ -->
+        <div style="width: 45%;">
+            <canvas id="myChart"></canvas>
+        </div>
+        <!-- Biểu đồ độ ẩm -->
+        <div style="width: 45%;">
+            <canvas id="myHumidityChart"></canvas>
         </div>
     </div>
+
+    <div id="weather-data">
+        <!-- Biểu đồ độ sáng -->
+        <div style="width: 45%;">
+            <canvas id="myLuxChart"></canvas>
+        </div>
+        <!-- Biểu đồ áp suất -->
+        <div style="width: 45%;">
+            <canvas id="myPressureChart"></canvas>
+        </div>
+        <div style="width: 100%;">
+            <canvas id="myPieChart"></canvas>
+        </div>
+    </div>
+
+    <!-- Liên kết đến file JavaScript -->
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <script src="/app_web/static/js/script.js"></script>
 </body>
+
 </html>

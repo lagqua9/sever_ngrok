@@ -3,10 +3,14 @@ body {
     background-color: #f0f8ff;
     margin: 0;
     padding: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+#title_id h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
 }
 
 .container {
@@ -22,7 +26,59 @@ h1 {
 }
 
 #weather-data {
-    margin-top: 20px;
-    font-size: 18px;
-    color: #555;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    flex-wrap: wrap;
+}
+
+#weather-data div {
+    width: 45%;
+}
+
+canvas {
+    width: 100% !important;
+    height: auto !important;
+}
+
+/* Media Query cho các màn hình nhỏ hơn 768px (thường là điện thoại) */
+@media (max-width: 768px) {
+     /* Điều chỉnh kích thước canvas để biểu đồ to hơn */
+     canvas {
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    #weather-data {
+        flex-direction: column;
+    }
+
+    /* Điều chỉnh kích thước của phần chứa các biểu đồ */
+    #weather-data div {
+        width: 100% !important; /* Cho phép biểu đồ chiếm toàn bộ chiều rộng của khung chứa */
+        max-width: 400px !important; /* Đặt chiều rộng tối đa lớn hơn để biểu đồ to hơn */
+        height: auto !important; /* Giữ chiều cao tự động */
+        margin-bottom: 20px;
+    }
+
+    /* Nếu muốn thiết lập kích thước cụ thể cho biểu đồ tròn */
+    #myPieChart {
+        width: 100% !important; /* Biểu đồ tròn chiếm toàn bộ vùng chứa */
+        max-width: 400px !important; /* Đặt chiều rộng tối đa cho biểu đồ */
+        height: auto !important; /* Giữ tỷ lệ khung hình */
+    }
+}
+
+#myPieChart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px !important;
+    /* Chiều rộng cụ thể cho biểu đồ tròn */
+    height: 300px !important;
+    /* Chiều cao cụ thể cho biểu đồ tròn */
+    margin: 0 auto;
+    /* Căn giữa biểu đồ */
 }
